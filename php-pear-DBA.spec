@@ -3,8 +3,8 @@
 %define		_status		stable
 
 %define		_pearname	%{_class}
-Summary:	%{_pearname} - Berkely-style Database Class
-Summary(pl):	%{_pearname} - klasa bazy danych w stylu Berkely
+Summary:	%{_pearname} - Berkeley-style Database Class
+Summary(pl):	%{_pearname} - klasa bazy danych w stylu Berkeley
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	1
@@ -23,15 +23,15 @@ simple DBM class written in PHP. Also provides a relational database
 system with support for selects, joins, sorts, projects, multiple
 tables, type checking, autoincrements and more.
 
-This class has in PEAR status: %{_status}
+This class has in PEAR status: %{_status}.
 
 %description -l pl
 Implementacja bazy danych w stylu DBM, u¿ywaj±cej PHP-owych funkcji
 DBA lub prostych klas DBM napisanych w PHP. Dostarcza tak¿e relacyjny
-system bazo-danowy z supportem do funkcji select, join, sort, project,
-wielu tablic, sprawdzania typów, autoinkrementacji itd.
+system bazodanowy z obs³ug± funkcji select, join, sort, project, wielu
+tabel, sprawdzania typów, autoinkrementacji itd.
 
-Ta klasa ma w PEAR status: %{_status}
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
