@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - Berkeley-style Database Class
 Summary(pl):	%{_pearname} - klasa bazy danych w stylu Berkeley
 Name:		php-pear-%{_pearname}
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	b8337f5398704309a7b6f3c94a8b86e9
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	55bf3ff111e3ceea9fd985e975ac4d09
 URL:		http://pear.php.net/package/DBA/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
