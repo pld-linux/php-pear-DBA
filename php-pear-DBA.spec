@@ -4,7 +4,7 @@
 Summary:	%{_class} - Berkely-style Database Class
 Summary(pl):	%{_class} - klasa bazy danych w stylu Berkely
 Name:		php-pear-%{_pearname}
-Version:	0.15
+Version:	0.16
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
