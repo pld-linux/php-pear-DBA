@@ -24,7 +24,7 @@ simple DBM class written in PHP. Also provides a relational database
 system with support for selects, joins, sorts, projects, multiple
 tables, type checking, autoincrements and more.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Implementacja bazy danych w stylu DBM, u¿ywaj±cej PHP-owych funkcji
