@@ -4,7 +4,7 @@
 Summary:	%{_class} - Berkely-style Database Class
 Summary(pl):	%{_class} - klasa bazy danych w stylu Berkely
 Name:		php-pear-%{_pearname}
-Version:	0.16
+Version:	0.17
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -34,13 +34,13 @@ wielu tablic, sprawdzania typów, autoinkrementacji itd.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/DB/%{_class}
 
-install %{_class}*.php		$RPM_BUILD_ROOT%{php_pear_dir}/DB/%{_class}
+install %{_class}-%{version}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/DB/%{_class}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc tests/* docs/*
+%doc %{_class}-%{version}/{tests,docs}/*
 %dir %{php_pear_dir}/DB/%{_class}
 %{php_pear_dir}/DB/%{_class}/*.php
