@@ -4,8 +4,8 @@
 Summary:	%{_pearname} - Berkely-style Database Class
 Summary(pl):	%{_pearname} - klasa bazy danych w stylu Berkely
 Name:		php-pear-%{_pearname}
-Version:	0.9.4
-Release:	2
+Version:	0.9.5
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
