@@ -4,8 +4,8 @@
 Summary:	%{_pearname} - Berkely-style Database Class
 Summary(pl):	%{_pearname} - klasa bazy danych w stylu Berkely
 Name:		php-pear-%{_pearname}
-Version:	0.18
-Release:	1
+Version:	0.9
+Release:	0.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -32,9 +32,11 @@ wielu tablic, sprawdzania typów, autoinkrementacji itd.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/DB/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Driver
 
-install %{_class}-%{version}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/DB/%{_class}
+install %{_class}-%{version}/%{_class}.php $RPM_BUILD_ROOT%{php_pear_dir}
+install %{_class}-%{version}/%{_class}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_class}-%{version}/%{_class}/Driver/* $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Driver
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -42,5 +44,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_class}-%{version}/{tests,docs}/*
-%dir %{php_pear_dir}/DB/%{_class}
-%{php_pear_dir}/DB/%{_class}/*.php
+%dir %{php_pear_dir}/%{_class}
+%dir %{php_pear_dir}/%{_class}/Driver
+%{php_pear_dir}/*.php
+%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/%{_class}/Driver/*
