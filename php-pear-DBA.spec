@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		DBA
 %define		_pearname	%{_class}
-Summary:	%{_class} - Berkely-style Database Class
-Summary(pl):	%{_class} - klasa bazy danych w stylu Berkely
+Summary:	%{_pearname} - Berkely-style Database Class
+Summary(pl):	%{_pearname} - klasa bazy danych w stylu Berkely
 Name:		php-pear-%{_pearname}
 Version:	0.17
 Release:	1
