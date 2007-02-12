@@ -4,7 +4,7 @@
 
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Berkeley-style Database Class
-Summary(pl):	%{_pearname} - klasa bazy danych w stylu Berkeley
+Summary(pl.UTF-8):   %{_pearname} - klasa bazy danych w stylu Berkeley
 Name:		php-pear-%{_pearname}
 Version:	1.1
 Release:	4
@@ -29,17 +29,17 @@ tables, type checking, autoincrements and more.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Implementacja bazy danych w stylu DBM, uøywaj±cej PHP-owych funkcji
-DBA lub prostych klas DBM napisanych w PHP. Dostarcza takøe relacyjny
-system bazodanowy z obs≥ug± funkcji select, join, sort, project, wielu
-tabel, sprawdzania typÛw, autoinkrementacji itd.
+%description -l pl.UTF-8
+Implementacja bazy danych w stylu DBM, u≈ºywajƒÖcej PHP-owych funkcji
+DBA lub prostych klas DBM napisanych w PHP. Dostarcza tak≈ºe relacyjny
+system bazodanowy z obs≈ÇugƒÖ funkcji select, join, sort, project, wielu
+tabel, sprawdzania typ√≥w, autoinkrementacji itd.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -48,7 +48,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
