@@ -4,7 +4,7 @@
 
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Berkeley-style Database Class
-Summary(pl.UTF-8):   %{_pearname} - klasa bazy danych w stylu Berkeley
+Summary(pl.UTF-8):	%{_pearname} - klasa bazy danych w stylu Berkeley
 Name:		php-pear-%{_pearname}
 Version:	1.1
 Release:	4
@@ -39,7 +39,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
